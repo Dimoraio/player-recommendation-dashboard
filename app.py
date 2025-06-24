@@ -8,7 +8,7 @@ st.set_page_config(page_title="Football Player Recommendation", layout="wide")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("dataset_BI5.csv")
+    df = pd.read_csv("dataset_BI5_with_clusters.csv")
     clusters = pd.read_csv("KMeans_Cluster_Profiles.csv")
     return df, clusters
 
